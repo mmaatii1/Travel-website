@@ -1,0 +1,356 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+html,body{
+    font-size: 62.5%;
+    font-family: 'Comfortaa', cursive;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    display:flex;
+    background-color:rgb(27, 22, 22);
+    position: sticky;
+    top:0px;
+    z-index: 20;
+  
+
+    
+}
+#logo{
+    font-size: 3rem;
+
+ margin: auto;
+color: white;
+flex: 2 1 40rem;
+
+}
+
+nav{
+    min-height: 7vh;
+    padding: 2rem;
+    align-items: center;
+    display:flex;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    
+    
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    font-size:2rem;
+    list-style: none;
+}
+.hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),transparent),url("img/landing-page.jpg");
+    background-repeat: no-repeat;
+    min-height: 93vh;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    
+    flex-wrap: wrap-reverse;
+    
+}
+.hero-text{
+    align-self: center;
+    order: 2;
+    padding: 15rem;
+    font-size: 2rem;
+    color:white;
+    min-width: 10rem;
+
+    
+}
+.hero-text h1{
+    padding-bottom: 5rem;
+    font-size: 6rem;
+    text-decoration: none;
+}
+
+.hero-button{
+    align-self:center;
+    padding: 1rem;
+    min-width: 10rem;
+    
+
+}
+button{
+    padding: 2rem 6rem;
+    background-color: rgb(94, 71, 71);
+    border: none;
+    font-size: 3rem;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.5s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(53, 39, 39);
+}
+
+/* benefits section */
+
+#locations{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),transparent),url("img/new-york-page.png");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-content: center;
+    position: relative;
+    font-size: 4rem;
+    overflow: hidden;
+}
+.locations-head{
+    width: 90%;
+    margin: auto;
+}
+.locations-head h2{
+    padding: 4rem 0rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+}
+.locations-head p1{
+    padding: 4rem 0rem;
+    
+}
+.cloud{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.moving-cloud-1{
+    animation: cloud-moving 2s infinite alternate ease-in-out 2s;
+
+}
+.moving-cloud-2{
+    top:5%;
+    z-index: -1;
+    opacity: 0.5;
+    animation: cloud-moving 2.1s infinite alternate ease-in-out 2s;
+    
+
+}
+@keyframes cloud-moving{
+    from{
+        transform: translate(5%,-5%);
+
+    }
+    to{
+        transform: translate(0%,0%);
+    }
+}
+/*card-sec*/
+#benefits{
+    min-height: 70vh;
+    background: white;
+    display:flex;
+    flex-direction: column;
+    
+    
+}
+.cards-text{
+    display:flex;
+    flex-direction: column;
+    background: rgb(39, 39, 49);
+    min-height: 20vh;
+    align-items: center;
+    justify-content: center;
+
+}
+.real-text{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.cards-text h2, p{
+color:white;
+padding: 2rem 2rem;
+font-size: 3rem;
+
+
+}
+.cards-text p{
+    font-size: 2rem;
+}
+.cards-cointaner{
+   
+    min-height: 30vh;
+    max-width: 100%;
+    display:flex;
+    flex-direction: row;
+   margin:auto;
+   flex-wrap:wrap;
+   justify-content: center;
+    
+    
+    
+}
+.karta{
+    align-self: auto;
+    width: 15rem;
+    height: 15rem;
+    display:flex;
+   
+    
+    
+    
+}
+.card1,.card2,.card3{
+    
+    flex: 1 1 15rem;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem;
+    min-width: 35rem;
+    max-width: 40rem;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.cardPIC{
+    display:flex;
+    background-color: rgb(25, 25, 31);
+    align-items: center;
+    justify-content: center;
+    min-height: 20rem;
+}
+.cards-textt p{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    height: 17rem;
+}
+.cards-textt h1{
+    padding-top:5rem;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* contact */
+
+
+#contact{
+    background-image: url(img/contact-mountain.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 85vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    
+}
+.form-wrapper{
+    
+   color:white;
+    height: 60%;
+    width: 60%;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5)
+}
+.form-header{
+    padding: 7rem;
+    text-align: center;
+}
+
+
+form button{
+    margin-top: 10rem;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+
+.email-form, .name-form{
+    padding-bottom: 6rem;
+    text-align: center;
+    
+    
+   
+}
+label{
+    padding: 1rem;
+}
+input{
+    padding: 1rem 3rem;
+    margin-left:3rem;
+}
+
+
+footer{
+    
+    background-color:rgba(0, 0, 0, 0.87)
+    
+}
+.footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.icon{
+    padding-right: 3rem; padding-left: 3rem;
+    padding-top: 2rem; padding-bottom: 1rem;
+}
+
+
+
+
+
+/*media que */
+@media screen and (max-width: 900px){
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 1.5rem;
+    }
+    .hero-text{
+        padding: 5rem;
+        font-size: 2rem;
+    }
+    .hero-text h1{
+        font-size: 4rem;
+    }
+    .hero-button{
+        align-self:center;
+        padding: 1rem;
+        min-width: 2rem;
+        
+    
+    }
+    .moving-cloud-1{
+        width: 30rem;
+    }
+    .moving-cloud-2{
+        width:30rem;
+    }
+    #locations{
+        font-size: 2rem;
+        
+    }
+   
+    
+
+}
+@media screen and (max-width: 600px){
+    .form-wrapper{
+        width: 100%;
+        align-self:center;
+    }
+}
